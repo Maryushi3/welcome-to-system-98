@@ -1,6 +1,9 @@
 # Welcome to System 98
 "Welcome to Windows 98" re-created for web.
 
+![Alt text](/screenshots/idle.png?raw=true "Optional Title")
+
+
 For now it's just a static screen :)
 
 Made by hand using the power of HTML and CSS. Soon with some JS!
