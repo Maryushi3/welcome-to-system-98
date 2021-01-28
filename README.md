@@ -9,6 +9,7 @@ For now it's just a static screen :)
 Made by hand using the power of HTML and CSS. Soon with some JS!
 
 ## Todo
+- [ ] add logo/icon
 - [ ] add menu hover support
 - [ ] fill other screens with text
 - [ ] find and add images for other screens
