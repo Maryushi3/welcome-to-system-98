@@ -10,8 +10,8 @@
 
     <link href="reset.css" rel="stylesheet">
     <link href="welcome.css" rel="stylesheet">
-    
-    <script src="welcome.js"></script>
+
+    <!-- <script src="welcome.js"></script> -->
 
 </head>
 
@@ -33,32 +33,69 @@
                     contents
                 </h3>
             </div>
-            <ul class="sidebar-list">
-                <li>
-                    <div class="list-deco">&nbsp;</div>
-                    <h4>Register Now</h4>
-                </li>
-                <li>
-                    <div class="list-deco">&nbsp;</div>
-                    <h4>Connect to the Internet</h4>
-                </li>
-                <li>
-                    <div class="list-deco">&nbsp;</div>
-                    <h4>Discover System 98</h4>
-                </li>
-                <li>
-                    <div class="list-deco">&nbsp;</div>
-                    <h4>Maintain Your Computer</h4>
-                </li>
+            <ul class="sidebar-list" onmouseout="showTab(0)">
+                <a href="" onmouseover="showTab(1)">
+                    <li>
+                        <div class="list-deco">&nbsp;</div>
+                        <h4>Register Now</h4>
+                    </li>
+                </a>
+                <a href="" onmouseover="showTab(2)">
+                    <li>
+                        <div class="list-deco">&nbsp;</div>
+                        <h4>Connect to the Internet</h4>
+                    </li>
+                </a>
+                <a href="" onmouseover="showTab(3)">
+                    <li>
+                        <div class="list-deco">&nbsp;</div>
+                        <h4>Discover System 98</h4>
+                    </li>
+                </a>
+                <a href="" onmouseover="showTab(4)">
+                    <li>
+                        <div class="list-deco">&nbsp;</div>
+                        <h4>Maintain Your Computer</h4>
+                    </li>
+                </a>
             </ul>
         </div>
         <div class="content">
-            <h5>
-                Welcome
-            </h5>
-            <p>Welcome to the exciting new world of System 98, where your computer desktop meets the Internet</p>
-            <p>Sit back and relax as you take a brief tour of the options available on this screen.</p>
-            <p>If you want to explore an option, just click it.</p>
+            <div class="content-0" data-img="images/monitor.png">
+                <h5>
+                    Welcome
+                </h5>
+                <p>Welcome to the exciting new world of System 98, where your computer desktop meets the Internet</p>
+                <p>Sit back and relax as you take a brief tour of the options available on this screen.</p>
+                <p>If you want to explore an option, just click it.</p>
+            </div>
+            <div class="content-1" data-img="images/phone.png">
+                <h5>
+                    Register Now!
+                </h5>
+                <p> Registering your copy of System 98 opens the doors of full Internet support for your system. Better product support, free product ehnacements, free tips and tricks, adn the coolest System add-ons are just a mouse-click away by registering.</p>
+            </div>
+            <div class="content-2" data-img="images/globe.png">
+                <h5>
+                    Connect to the Internet
+                </h5>
+                <p>On the Internet, you can correspond through electronic mail (e-mail), get the latest news and financial information, and visit Web sites around the world.</p>
+                <p>System 98 makes getting connected to the Internet quick and simple.</p>
+            </div>
+            <div class="content-3" data-img="images/keyboard.png">
+                <h5>
+                    Discover System 98
+                </h5>
+                <p>"Computer Essentials " introduces first-time users to basic computing.</p>
+                <p>"System 98 Overview " offerst step-by-step lessons for new System users.</p>
+                <p>"What 's New" higlights the features of System 98.</p>
+            </div>
+            <div class="content-4" data-img="images/stopwatch.png">
+                <h5>
+                    Maintain Your Computer
+                </h5>
+                <p>Speed up your computer! For top-notch performance, schedule regular maintenance that frees up hard disk space, makes your programs run faster, and optimizes the performance of your hard disk.</p>
+            </div>
         </div>
         <div class="footer">
             <input type="checkbox" id="show" name="show" value="show" checked>
@@ -69,6 +106,23 @@
         <div class="bg-img"></div>
 
     </div>
+
+    <script>
+        function showTab(tabN) {
+            var tabs;
+            tabs = document.getElementsByClassName("content")[0].children;
+            console.log(tabs[tabN].style.display)
+
+
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            tabs[tabN].style.display = "block";
+            bg = document.getElementsByClassName("bg-img")[0];
+            bg.style.backgroundImage = "url(" + tabs[tabN].dataset.img + ")";
+            console.log("changed tab")
+        }
+    </script>
 
 </body>
 

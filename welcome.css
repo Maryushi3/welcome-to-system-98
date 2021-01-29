@@ -1,5 +1,7 @@
-body{
+body {
     background-color: #008080;
+    color: black;
+    ;
 }
 
 .window-body {
@@ -29,10 +31,10 @@ body{
     background-repeat: no-repeat;
     background-position: calc(100% + 35px) calc(100% + 35px);
     background-blend-mode: luminosity;
-    background-size: 230px;
+    background-size: auto 230px;
     opacity: 0.3;
     z-index: -2;
-    filter: brightness(40%) contrast(80%) sepia(100%) brightness(220%) hue-rotate(180deg) saturate(300%);
+    filter: brightness(40%) contrast(80%) sepia(100%) brightness(220%) hue-rotate(187deg) saturate(300%);
 }
 
 .main-grid {
@@ -73,12 +75,12 @@ hr {
     line-height: 12px;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
     vertical-align: middle;
     display: inline-block;
 }
 
-label{
+label {
     display: inline-block;
     vertical-align: middle;
 }
@@ -103,7 +105,6 @@ label{
 }
 
 .sidebar-list li {
-    text-shadow: 1px 0px #dcdcdc;
     border-bottom: #c0c0c0 2px solid;
     height: 24px;
 }
@@ -113,22 +114,45 @@ label{
     width: 3px;
     position: absolute;
     height: 24px;
+    pointer-events: none;
 }
 
-.sidebar-list li:nth-of-type(1) .list-deco {
+.sidebar-list a:nth-of-type(1) .list-deco {
     background-color: #009cff;
 }
 
-.sidebar-list li:nth-of-type(2) .list-deco {
+.sidebar-list a:nth-of-type(2) .list-deco {
     background-color: #ff3100;
 }
 
-.sidebar-list li:nth-of-type(3) .list-deco {
+.sidebar-list a:nth-of-type(3) .list-deco {
     background-color: #63ce31;
 }
 
-.sidebar-list li:nth-of-type(4) .list-deco {
+.sidebar-list a:nth-of-type(4) .list-deco {
     background-color: #ffce00;
+}
+
+.sidebar-list a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-list a:nth-of-type(1):hover {
+    background-image: linear-gradient(to right, #84CEFF, white)
+}
+
+.sidebar-list a:nth-of-type(2):hover {
+    background-image: linear-gradient(to right, #FF9C84, white)
+}
+
+.sidebar-list a:nth-of-type(3):hover {
+    background-image: linear-gradient(to right, #B5E79C, white)
+}
+
+.sidebar-list a:nth-of-type(4):hover {
+    background-image: linear-gradient(to right, #FFE784, white)
 }
 
 .sidebar-header {
@@ -139,7 +163,6 @@ label{
     line-height: 15px;
     height: 15px;
     border-bottom: #c0c0c0 2px solid;
-    text-shadow: 1px 0px #232323;
 }
 
 h1 {
@@ -168,6 +191,7 @@ h4 {
     padding-left: 13px;
     vertical-align: middle;
     display: inline;
+    pointer-events: none;
 }
 
 h5 {
@@ -186,14 +210,13 @@ h5 {
 .content p {
     line-height: 16px;
     margin-bottom: 16px;
-    text-shadow: 1px 0px #dcdcdc;
 }
 
 .header-heavy {
     font-weight: 900;
 }
 
-sup{
+sup {
     font-size: xx-small;
     vertical-align: super;
 }
@@ -204,4 +227,8 @@ sup{
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+div.content>div:not(:first-child) {
+    display: none;
 }
