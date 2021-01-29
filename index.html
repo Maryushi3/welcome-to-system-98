@@ -34,25 +34,25 @@
                 </h3>
             </div>
             <ul class="sidebar-list" onmouseout="showTab(0)">
-                <a href="" onmouseover="showTab(1)">
+                <a href="" onmouseover="showTab(1)" id="tab-1" onclick="markTab(1)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
                         <h4>Register Now</h4>
                     </li>
                 </a>
-                <a href="" onmouseover="showTab(2)">
+                <a href="" onmouseover="showTab(2)" id="tab-2" onclick="markTab(2)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
                         <h4>Connect to the Internet</h4>
                     </li>
                 </a>
-                <a href="" onmouseover="showTab(3)">
+                <a href="" onmouseover="showTab(3)" id="tab-3" onclick="markTab(3)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
                         <h4>Discover System 98</h4>
                     </li>
                 </a>
-                <a href="" onmouseover="showTab(4)">
+                <a href="" onmouseover="showTab(4)" id="tab-4" onclick="markTab(4)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
                         <h4>Maintain Your Computer</h4>
@@ -108,6 +108,8 @@
     </div>
 
     <script>
+        window.onload = checkTabs;
+
         function showTab(tabN) {
             var tabs;
             tabs = document.getElementsByClassName("content")[0].children;
@@ -121,6 +123,23 @@
             bg = document.getElementsByClassName("bg-img")[0];
             bg.style.backgroundImage = "url(" + tabs[tabN].dataset.img + ")";
             console.log("changed tab")
+        }
+
+        function markTab(tabN) {
+            console.log(tabN);
+            localStorage.setItem("visited-" + tabN, true);
+        }
+
+        function checkTabs() {
+            var tabLinks = document.getElementsByClassName("sidebar-list")[0].children;
+            for (let i = 0; i < tabLinks.length; i++) {
+                const header = tabLinks[i].children[0].children[1];
+                if (localStorage.getItem("visited-" + (i + 1))) {
+                    header.dataset.visited = true;
+                }
+                console.log(header)
+            }
+
         }
     </script>
 
