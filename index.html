@@ -10,159 +10,135 @@
 
     <link href="reset.css" rel="stylesheet">
     <link href="welcome.css" rel="stylesheet">
+    <link href="ui.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- <script src="welcome.js"></script> -->
 
 </head>
 
 <body>
-    <div class="window-body main-grid center">
-        <div class="header">
+    <div class="window center">
+        <div class="title-bar">
 
-            <h1>
-                <a title="mary.moe" href="https://mary.moe">
+            <div class="title-bar-text">
+                <div class="title-bar-icon-container"><img class="title-bar-icon" src="images/icons/window-icon.bmp"></div> Welcome to mary.moe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="content-body main-grid ">
+                <div class="header">
+
+                    <h1>
+                        <a title="mary.moe" href="https://mary.moe">
                     Maryushi-san<sup title="this is not acutally ®egistered">®</sup>
                 </a>
-                <a title="mary.moe" href="https://mary.moe">
-                    <div class="logo"><img src="favicon.ico" class=""></div>
-                </a>
-            </h1>
-            <hr>
-            <h2>
-                <a title="mary.moe" href="https://mary.moe">
-                    <span class="header-heavy">mary</span>.moe
-                </a>
-            </h2>
-        </div>
-        <div class=sidebar>
-            <div class="sidebar-header">
-                <h3>
-                    contents
-                </h3>
-            </div>
-            <ul class="sidebar-list" onmouseout="showTab(0)">
-                <a href="https://mkozlowski.net" target="_blank" rel="noopener noreferrer" onmouseover="showTab(1)" id="tab-1" onclick="markTab(1)">
-                    <li>
-                        <div class="list-deco">&nbsp;</div>
-                        <h4>Visit my portfolio</h4>
-                    </li>
-                </a>
-                <a href="https://trello.com/b/53oDL8mW/" target="_blank" rel="noopener noreferrer" onmouseover="showTab(2)" id="tab-2" onclick="markTab(2)">
-                    <li>
-                        <div class="list-deco">&nbsp;</div>
-                        <h4>See the games</h4>
-                    </li>
-                </a>
-                <a href="https://anilist.co/user/Maryushi3/" target="_blank" rel="noopener noreferrer" onmouseover="showTab(3)" id="tab-3" onclick="markTab(3)">
-                    <li>
-                        <div class="list-deco">&nbsp;</div>
-                        <h4>Discover anime</h4>
-                    </li>
-                </a>
-                <a href="https://github.com/Maryushi3/welcome-to-system-98" target="_blank" rel="noopener noreferrer" onmouseover="showTab(4)" id="tab-4" onclick="markTab(4)">
-                    <li>
-                        <div class="list-deco">&nbsp;</div>
-                        <h4>Check out this project</h4>
-                    </li>
-                </a>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="content-0" data-img="images/monitor.png">
-                <h5>
-                    Welcome
-                </h5>
-                <p>Welcome to this exciting and aesthetic website, where your computer desktop meets... uh... well... me! </p>
-                <p>Sit back and relax as you take a brief tour of the options available on this screen.</p>
-                <p>If you want to explore an option, just click it.</p>
-            </div>
-            <div class="content-1" data-img="images/phone.png">
-                <h5>
-                    Visit my portfolio
-                </h5>
-                <p> Exploring this options leads to my professional website.</p>
-                <p>My photography, graphics design, printed media and software development works are just a mouse-click away. There are some blog posts/rants planned too!</p>
-            </div>
-            <div class="content-2" data-img="images/globe.png">
-                <h5>
-                    See the games I've played
-                </h5>
-                <p>This one is a link to my Trello board with hopefully eventually a complete list of games I've played. With their respective ratings, statues and some with notes. (in Polish)</p>
-                <p>It really is accessible on the Internet! Just like electronic mail (e-mail), latest news and financial informations and other Web sites from around the world.</p>
+                        <a title="mary.moe" href="https://mary.moe">
+                            <div class="logo"><img src="favicon.ico" class=""></div>
+                        </a>
+                    </h1>
+                    <hr>
+                    <h2>
+                        <a title="mary.moe" href="https://mary.moe">
+                            <span class="header-heavy">mary</span>.moe
+                        </a>
+                    </h2>
+                </div>
+                <div class=sidebar>
+                    <div class="sidebar-header">
+                        <h3>
+                            contents
+                        </h3>
+                    </div>
+                    <ul class="sidebar-list" onmouseout="showTab(0)">
+                        <a href="https://mkozlowski.net" target="_blank" rel="noopener noreferrer" onmouseover="showTab(1)" id="tab-1" onclick="markTab(1)">
+                            <li>
+                                <div class="list-deco">&nbsp;</div>
+                                <h4>Visit my portfolio</h4>
+                            </li>
+                        </a>
+                        <a href="https://trello.com/b/53oDL8mW/" target="_blank" rel="noopener noreferrer" onmouseover="showTab(2)" id="tab-2" onclick="markTab(2)">
+                            <li>
+                                <div class="list-deco">&nbsp;</div>
+                                <h4>See the games</h4>
+                            </li>
+                        </a>
+                        <a href="https://anilist.co/user/Maryushi3/" target="_blank" rel="noopener noreferrer" onmouseover="showTab(3)" id="tab-3" onclick="markTab(3)">
+                            <li>
+                                <div class="list-deco">&nbsp;</div>
+                                <h4>Discover anime</h4>
+                            </li>
+                        </a>
+                        <a href="https://github.com/Maryushi3/welcome-to-system-98" target="_blank" rel="noopener noreferrer" onmouseover="showTab(4)" id="tab-4" onclick="markTab(4)">
+                            <li>
+                                <div class="list-deco">&nbsp;</div>
+                                <h4>Check out this project</h4>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="content-0" data-img="images/monitor.png">
+                        <h5>
+                            Welcome
+                        </h5>
+                        <p>Welcome to the exciting new website of well... uh... well... mine! I'm Mariusz but some call me Maryushi-san (with "san" sometimes written with a "3") or just <strong>Mary</strong>.</p>
+                        <p>Sit back and relax as you take a brief tour of the options available on this screen.</p>
+                        <p>If you want to explore an option, just click it.</p>
+                    </div>
+                    <div class="content-1" data-img="images/phone.png">
+                        <h5>
+                            Visit my portfolio
+                        </h5>
+                        <p> Exploring this options leads to my professional website.</p>
+                        <p>My photography, graphics design, printed media and software development works are just a mouse-click away. There are some blog posts/rants planned too!</p>
+                    </div>
+                    <div class="content-2" data-img="images/globe.png">
+                        <h5>
+                            See the games I've played
+                        </h5>
+                        <p>This one is a link to my Trello board with hopefully eventually a complete list of games I've played. With their respective ratings, statues and some with notes. (in Polish)</p>
+                        <p>It really is accessible on the Internet! Just like electronic mail (e-mail), latest news and financial informations and other Web sites from around the world.</p>
 
-            </div>
-            <div class="content-3" data-img="images/keyboard.png">
-                <h5>
-                    Discover the anime I've seen
-                </h5>
-                <p>"AniList" allows creating personalized lists of anime seen and manga read, keep track of them and rate them.</p>
-                <p>This option gets you to my AniList profile.</p>
-                <p>Lately I've been wanting to watch more anime than I actually watch, so this list is a bit stale.</p>
-            </div>
-            <div class="content-4" data-img="images/stopwatch.png">
-                <h5>
-                    Check out this project
-                </h5>
-                <p>I've made this website from the ground up as a hobby project and raw font-end development excercise for myself. It was lots of fun moving things by single pixels.</p>
-                <p>I'm very happy with the end result. It's up on my GitHub too. Go check it out!</p>
-            </div>
-        </div>
-        <div class="footer">
-            <input type="checkbox" id="show" name="show" value="show" checked>
-            <label for="show">Show this screen each time System 98 starts.</label>
-            <button type="button" class="close-button" onclick="clearStorage()">Close</button>
-        </div>
-        <div class="masked-bg"></div>
-        <div class="bg-img"></div>
+                    </div>
+                    <div class="content-3" data-img="images/keyboard.png">
+                        <h5>
+                            Discover the anime I've seen
+                        </h5>
+                        <p>"AniList" allows creating personalized lists of anime seen and manga read, keep track of them and rate them.</p>
+                        <p>This option gets you to my AniList profile.</p>
+                        <p>Lately I've been wanting to watch more anime than I actually watch, so this list is a bit stale.</p>
+                    </div>
+                    <div class="content-4" data-img="images/stopwatch.png">
+                        <h5>
+                            Check out this project
+                        </h5>
+                        <p>I've made this website from the ground up as a hobby project and raw font-end development excercise for myself. It was lots of fun moving things by single pixels.</p>
+                        <p>I'm very happy with the end result. It's up on my GitHub too. Go check it out!</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <input type="checkbox" id="show" name="show" value="show" checked>
+                    <label for="show">This checkbox doesn't do anything yet.</label>
+                    <button type="button" class="close-button" onclick="clearStorage()">Close</button>
+                </div>
 
+                <div class="masked-bg"></div>
+                <div class="bg-img"></div>
+            </div>
+
+
+        </div>
     </div>
 
-    <script>
-        window.onload = checkTabs;
-
-        function showTab(tabN) {
-            var tabs;
-            tabs = document.getElementsByClassName("content")[0].children;
-            console.log(tabs[tabN].style.display)
 
 
-            for (let i = 0; i < tabs.length; i++) {
-                tabs[i].style.display = "none";
-            }
-            tabs[tabN].style.display = "block";
-            bg = document.getElementsByClassName("bg-img")[0];
-            bg.style.backgroundImage = "url(" + tabs[tabN].dataset.img + ")";
-            console.log("changed tab")
-        }
-
-        function markTab(tabN) {
-            console.log("Marking tab " + tabN)
-            console.log(tabN);
-            localStorage.setItem("visited-" + tabN, true);
-        }
-
-        function checkTabs() {
-            var tabLinks = document.getElementsByClassName("sidebar-list")[0].children;
-            for (let i = 0; i < tabLinks.length; i++) {
-                const header = tabLinks[i].children[0].children[1];
-                if (localStorage.getItem("visited-" + (i + 1))) {
-                    header.dataset.visited = true;
-                } else {
-                    delete header.dataset.visited;
-                }
-                console.log(header)
-            }
-
-        }
-
-        function clearStorage() {
-            if (confirm('This will clear clicked links checkmarks')) {
-                localStorage.clear()
-                checkTabs();
-            }
-        }
-    </script>
-
+    <script src="welcome.js"></script>
 </body>
 
 </html>

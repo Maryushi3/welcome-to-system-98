@@ -4,9 +4,10 @@ body {
     background-position: bottom left;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 480px auto;
+    background-size: calc(100vw/4) auto;
     image-rendering: auto;
-    color: black;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -14,12 +15,12 @@ body {
     image-rendering: crisp-edges;
 }
 
-.window-body {
-    font-family: 'Microsoft Sans', Arial, Helvetica, sans-serif;
+.content-body {
     font-size: 10pt;
     width: 478px;
     height: 322px;
     background-color: white;
+    z-index: 1;
 }
 
 .masked-bg {
@@ -51,8 +52,9 @@ body {
     display: grid;
     align-content: space-between;
     grid-template-areas: 'header header' 'sidebar content' 'footer footer';
-    grid-template-rows: 81px 1fr auto;
+    grid-template-rows: 81px 2fr auto;
     grid-template-columns: 180px auto;
+    position: relative;
 }
 
 hr {
@@ -111,10 +113,12 @@ label {
 
 .logo {
     display: inline;
+    size: 32px 32px;
 }
 
 .logo img {
     margin-top: -100%;
+    size: 32px 32px;
 }
 
 .sidebar-list {
@@ -247,6 +251,10 @@ h5 {
 sup {
     font-size: xx-small;
     vertical-align: super;
+}
+
+strong {
+    font-weight: bold;
 }
 
 .center {
