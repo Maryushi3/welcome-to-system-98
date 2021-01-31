@@ -1,5 +1,11 @@
 body {
     background-color: #008080;
+    background-image: url("images/bg/98se-tan-static.png");
+    background-position: bottom left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 480px auto;
+    image-rendering: auto;
     color: black;
 }
 
@@ -180,8 +186,13 @@ label {
 h1 {
     font-size: 11pt;
     padding-left: 36px;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
     margin-top: 29px
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
 }
 
 h2 {
@@ -226,6 +237,7 @@ h5 {
 .content p {
     line-height: 16px;
     margin-bottom: 16px;
+    text-shadow: white 1px 0px;
 }
 
 .header-heavy {

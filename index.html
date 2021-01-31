@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Welcome to System 98</title>
+    <title>Maryushi-san - mary.moe</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,20 @@
 <body>
     <div class="window-body main-grid center">
         <div class="header">
+
             <h1>
-                Company<sup>®</sup>
-                <div class="logo"><img src="images/logo.png" class=""></div>
+                <a title="mary.moe" href="https://mary.moe">
+                    Maryushi-san<sup title="this is not acutally ®egistered">®</sup>
+                </a>
+                <a title="mary.moe" href="https://mary.moe">
+                    <div class="logo"><img src="favicon.ico" class=""></div>
+                </a>
             </h1>
             <hr>
             <h2>
-                <span class="header-heavy">System</span>98
+                <a title="mary.moe" href="https://mary.moe">
+                    <span class="header-heavy">mary</span>.moe
+                </a>
             </h2>
         </div>
         <div class=sidebar>
@@ -34,28 +41,28 @@
                 </h3>
             </div>
             <ul class="sidebar-list" onmouseout="showTab(0)">
-                <a href="" onmouseover="showTab(1)" id="tab-1" onclick="markTab(1)">
+                <a href="https://mkozlowski.net" target="_blank" rel="noopener noreferrer" onmouseover="showTab(1)" id="tab-1" onclick="markTab(1)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
-                        <h4>Register Now</h4>
+                        <h4>Visit my portfolio</h4>
                     </li>
                 </a>
-                <a href="" onmouseover="showTab(2)" id="tab-2" onclick="markTab(2)">
+                <a href="https://trello.com/b/53oDL8mW/" target="_blank" rel="noopener noreferrer" onmouseover="showTab(2)" id="tab-2" onclick="markTab(2)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
-                        <h4>Connect to the Internet</h4>
+                        <h4>See the games</h4>
                     </li>
                 </a>
-                <a href="" onmouseover="showTab(3)" id="tab-3" onclick="markTab(3)">
+                <a href="https://anilist.co/user/Maryushi3/" target="_blank" rel="noopener noreferrer" onmouseover="showTab(3)" id="tab-3" onclick="markTab(3)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
-                        <h4>Discover System 98</h4>
+                        <h4>Discover anime</h4>
                     </li>
                 </a>
-                <a href="" onmouseover="showTab(4)" id="tab-4" onclick="markTab(4)">
+                <a href="https://github.com/Maryushi3/welcome-to-system-98" target="_blank" rel="noopener noreferrer" onmouseover="showTab(4)" id="tab-4" onclick="markTab(4)">
                     <li>
                         <div class="list-deco">&nbsp;</div>
-                        <h4>Maintain Your Computer</h4>
+                        <h4>Check out this project</h4>
                     </li>
                 </a>
             </ul>
@@ -65,36 +72,39 @@
                 <h5>
                     Welcome
                 </h5>
-                <p>Welcome to the exciting new world of System 98, where your computer desktop meets the Internet</p>
+                <p>Welcome to this exciting and aesthetic website, where your computer desktop meets... uh... well... me! </p>
                 <p>Sit back and relax as you take a brief tour of the options available on this screen.</p>
                 <p>If you want to explore an option, just click it.</p>
             </div>
             <div class="content-1" data-img="images/phone.png">
                 <h5>
-                    Register Now!
+                    Visit my portfolio
                 </h5>
-                <p> Registering your copy of System 98 opens the doors of full Internet support for your system. Better product support, free product ehnacements, free tips and tricks, adn the coolest System add-ons are just a mouse-click away by registering.</p>
+                <p> Exploring this options leads to my professional website.</p>
+                <p>My photography, graphics design, printed media and software development works are just a mouse-click away. There are some blog posts/rants planned too!</p>
             </div>
             <div class="content-2" data-img="images/globe.png">
                 <h5>
-                    Connect to the Internet
+                    See the games I've played
                 </h5>
-                <p>On the Internet, you can correspond through electronic mail (e-mail), get the latest news and financial information, and visit Web sites around the world.</p>
-                <p>System 98 makes getting connected to the Internet quick and simple.</p>
+                <p>This one is a link to my Trello board with hopefully eventually a complete list of games I've played. With their respective ratings, statues and some with notes. (in Polish)</p>
+                <p>It really is accessible on the Internet! Just like electronic mail (e-mail), latest news and financial informations and other Web sites from around the world.</p>
+
             </div>
             <div class="content-3" data-img="images/keyboard.png">
                 <h5>
-                    Discover System 98
+                    Discover the anime I've seen
                 </h5>
-                <p>"Computer Essentials " introduces first-time users to basic computing.</p>
-                <p>"System 98 Overview " offerst step-by-step lessons for new System users.</p>
-                <p>"What 's New" higlights the features of System 98.</p>
+                <p>"AniList" allows creating personalized lists of anime seen and manga read, keep track of them and rate them.</p>
+                <p>This option gets you to my AniList profile.</p>
+                <p>Lately I've been wanting to watch more anime than I actually watch, so this list is a bit stale.</p>
             </div>
             <div class="content-4" data-img="images/stopwatch.png">
                 <h5>
-                    Maintain Your Computer
+                    Check out this project
                 </h5>
-                <p>Speed up your computer! For top-notch performance, schedule regular maintenance that frees up hard disk space, makes your programs run faster, and optimizes the performance of your hard disk.</p>
+                <p>I've made this website from the ground up as a hobby project and raw font-end development excercise for myself. It was lots of fun moving things by single pixels.</p>
+                <p>I'm very happy with the end result. It's up on my GitHub too. Go check it out!</p>
             </div>
         </div>
         <div class="footer">
@@ -126,6 +136,7 @@
         }
 
         function markTab(tabN) {
+            console.log("Marking tab " + tabN)
             console.log(tabN);
             localStorage.setItem("visited-" + tabN, true);
         }
