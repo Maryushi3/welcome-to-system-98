@@ -38,7 +38,8 @@ button::-moz-focus-inner {
     padding: 2px 2px 2px 2px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    min-height: 14px;
 }
 
 .title-bar.inactive {
@@ -218,4 +219,8 @@ input[type=checkbox][disabled]:checked+label:after {
 
 .title-bar-icon-container {
     display: inline;
+}
+
+.window-body {
+    margin-top: 1px;
 }

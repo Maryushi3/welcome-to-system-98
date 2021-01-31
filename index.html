@@ -11,6 +11,7 @@
     <link href="reset.css" rel="stylesheet">
     <link href="welcome.css" rel="stylesheet">
     <link href="ui.css" rel="stylesheet">
+    <link href="taskbar.css" rel="stylesheet">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
@@ -25,9 +26,7 @@
             <div class="title-bar-text">
                 <div class="title-bar-icon-container"><img class="title-bar-icon" src="images/icons/window-icon.bmp"></div> Welcome to mary.moe</div>
             <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+                <button aria-label="Close" title="Close (not really)"></button>
             </div>
         </div>
         <div class="window-body">
@@ -123,9 +122,9 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <input type="checkbox" id="show" name="show" value="show" checked>
-                    <label for="show">This checkbox doesn't do anything yet.</label>
-                    <button type="button" class="close-button" onclick="clearStorage()">Close</button>
+                    <input disabled type="checkbox" id="show" name="show" value="show" checked>
+                    <label for="show" title="It really does not.">This checkbox doesn't do anything yet.</label>
+                    <button title="Clear checkmarks" type="button" class="close-button" onclick="clearStorage()">Close</button>
                 </div>
 
                 <div class="masked-bg"></div>
@@ -136,6 +135,9 @@
         </div>
     </div>
 
+    <div class="taskbar">
+        <button><img src="images/icons/window-icon.bmp"> Stop</button>
+    </div>
 
 
     <script src="welcome.js"></script>
