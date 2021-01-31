@@ -20,8 +20,8 @@
         <div class="header">
             <h1>
                 Company<sup>®</sup>
+                <div class="logo"><img src="images/logo.png" class=""></div>
             </h1>
-            <!-- <img src="logo.png" class="logo"> -->
             <hr>
             <h2>
                 <span class="header-heavy">System</span>98
@@ -100,7 +100,7 @@
         <div class="footer">
             <input type="checkbox" id="show" name="show" value="show" checked>
             <label for="show">Show this screen each time System 98 starts.</label>
-            <button type="button" class="close-button">Close</button>
+            <button type="button" class="close-button" onclick="clearStorage()">Close</button>
         </div>
         <div class="masked-bg"></div>
         <div class="bg-img"></div>
@@ -136,10 +136,19 @@
                 const header = tabLinks[i].children[0].children[1];
                 if (localStorage.getItem("visited-" + (i + 1))) {
                     header.dataset.visited = true;
+                } else {
+                    delete header.dataset.visited;
                 }
                 console.log(header)
             }
 
+        }
+
+        function clearStorage() {
+            if (confirm('This will clear clicked links checkmarks')) {
+                localStorage.clear()
+                checkTabs();
+            }
         }
     </script>
 

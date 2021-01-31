@@ -1,13 +1,17 @@
 body {
     background-color: #008080;
     color: black;
-    ;
+}
+
+* {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 .window-body {
     font-family: 'Microsoft Sans', Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    width: 477px;
+    width: 478px;
     height: 322px;
     background-color: white;
 }
@@ -99,6 +103,14 @@ label {
     letter-spacing: -0.05em;
 }
 
+.logo {
+    display: inline;
+}
+
+.logo img {
+    margin-top: -100%;
+}
+
 .sidebar-list {
     letter-spacing: -0.00625em;
     width: 100%;
@@ -166,10 +178,10 @@ label {
 }
 
 h1 {
-    font-size: 12pt;
+    font-size: 11pt;
     padding-left: 36px;
-    margin-bottom: -2px;
-    margin-top: 30px
+    margin-bottom: -1px;
+    margin-top: 29px
 }
 
 h2 {
@@ -229,7 +241,6 @@ sup {
     position: fixed;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
