@@ -1,5 +1,9 @@
 window.onload = checkTabs;
 
+updateClock();
+window.setInterval(updateClock, 1000)
+
+
 function showTab(tabN) {
     var tabs;
     tabs = document.getElementsByClassName("content")[0].children;
@@ -41,4 +45,11 @@ function clearStorage() {
         localStorage.clear()
         checkTabs();
     }
+}
+
+function updateClock() {
+    var d = new Date();
+    var clockString = d.getHours() + ":" + d.getMinutes();
+
+    document.getElementsByClassName("clock")[0].textContent = clockString;
 }
