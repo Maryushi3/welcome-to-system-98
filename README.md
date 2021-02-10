@@ -6,6 +6,8 @@
 
 Made by hand using the power of HTML, CSS and some JS!
 
+**This branch (`moe`) contains all the development related to the site for which this project was originally intended - [mary.moe](https://mary.moe)**. It's the most up to date branch of the project. Everything *"generic"* will eventually get backported to `main`.
+
 ## Todo
 - [x] add logo/icon
 - [x] add menu hover support
@@ -17,15 +19,18 @@ Made by hand using the power of HTML, CSS and some JS!
 - [ ] reorder `.css` in a more sensible way
 - [ ] make checkbox do something
 - [ ] maybe readjust the background
+- [ ] get things to fit in mobile browsers
+- [ ] backport all *generic* development from `moe` branch to the `main` branch
 
 
 ## Image sources:
-- [clouds](https://publicdomainq.net/sky-sunbeam-clouds-0046047/) (resized and crushed to Windows color palete)
-- [CRT monitor](https://pixabay.com/vectors/monitor-computer-screen-video-tube-23352/) (flipped)
-- [phone](https://www.freeimageslive.co.uk/free_stock_image/hook-jpg) (removed bg, flipped resized, blurred, adjusted brightness/contrast)
-- [earth](https://pixabay.com/illustrations/planet-earth-cosmos-continents-1457453/) (cropped)
-- [keyboard](https://commons.wikimedia.org/wiki/File:Cherry-keyboard-big-Enter.jpg) (cropped, masked, adjusted brightness/contrast)
-- [stopwatch](https://pixabay.com/illustrations/stopwatch-precision-quick-record-2648253/) (removed bg, blurred, adjusted brightness/contrast)
+- [clouds](https://publicdomainq.net/sky-sunbeam-clouds-0046047/) (resized and crushed to Windows color palete),
+- [CRT monitor](https://pixabay.com/vectors/monitor-computer-screen-video-tube-23352/) (flipped),
+- [phone](https://www.freeimageslive.co.uk/free_stock_image/hook-jpg) (removed bg, flipped resized, blurred, adjusted brightness/contrast),
+- [earth](https://pixabay.com/illustrations/planet-earth-cosmos-continents-1457453/) (cropped),
+- [keyboard](https://commons.wikimedia.org/wiki/File:Cherry-keyboard-big-Enter.jpg) (cropped, masked, adjusted brightness/contrast),
+- [stopwatch](https://pixabay.com/illustrations/stopwatch-precision-quick-record-2648253/) (removed bg, blurred, adjusted brightness/contrast),
+- other images - original files are (very) old, authors could not be found.
 
 
 ---

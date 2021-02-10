@@ -7,7 +7,6 @@ window.setInterval(updateClock, 1000)
 function showTab(tabN) {
     var tabs;
     tabs = document.getElementsByClassName("content")[0].children;
-    console.log(tabs[tabN].style.display)
 
 
     for (let i = 0; i < tabs.length; i++) {
@@ -16,14 +15,11 @@ function showTab(tabN) {
     tabs[tabN].style.display = "block";
     bg = document.getElementsByClassName("bg-img")[0];
     bg.style.backgroundImage = "url(" + tabs[tabN].dataset.img + ")";
-    console.log("changed tab")
 }
 
 function markTab(tabN) {
-    console.log("Marking tab " + tabN)
-    console.log(tabN);
     localStorage.setItem("visited-" + tabN, true);
-    location.reload();
+    // location.reload(); // if showing checkmarks is needed immediately
 }
 
 function checkTabs() {
@@ -35,7 +31,6 @@ function checkTabs() {
         } else {
             delete header.dataset.visited;
         }
-        console.log(header)
     }
 
 }
@@ -49,7 +44,7 @@ function clearStorage() {
 
 function updateClock() {
     var d = new Date();
-    var clockString = d.getHours() + ":" + d.getMinutes();
+    var clockString = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2)
 
     document.getElementsByClassName("clock")[0].textContent = clockString;
 }
